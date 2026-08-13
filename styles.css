@@ -357,7 +357,7 @@ body {
   /* bleeds past the card's own padding so it reads wider than the text above/below it */
   width: calc(100% + 60px);
   margin: 0 -30px 18px -30px;
-  height: 400px;
+  height: 600px;
   object-fit: cover;
   border-radius: 4px;
   border: 1px solid var(--border);
@@ -372,7 +372,7 @@ body {
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  height: 350px;
+  height: 500px;
   object-fit: cover;
   border-radius: 0;
   border-top: 1px solid var(--border);
