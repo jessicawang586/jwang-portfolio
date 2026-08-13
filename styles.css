@@ -354,21 +354,29 @@ body {
 }
 
 .entry-photo {
-  width: 100%;
-  height: 220px;
+  /* bleeds past the card's own padding so it reads wider than the text above/below it */
+  width: calc(100% + 60px);
+  margin: 0 -30px 18px -30px;
+  height: 260px;
   object-fit: cover;
   border-radius: 4px;
   border: 1px solid var(--border);
-  margin-bottom: 18px;
   display: block;
 }
 
 .section-photo {
-  width: 100%;
-  height: 260px;
+  /* breaks out of the centered content column to span the full viewport width */
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  height: 320px;
   object-fit: cover;
-  border-radius: 6px;
-  border: 1px solid var(--border);
+  border-radius: 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
   margin-bottom: 32px;
   display: block;
 }
